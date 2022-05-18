@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Euclid Enercity";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://www.enercity.de/assets/fonts/EuclidEnercity-Light.woff")
+      format("woff"),
+    url("https://www.enercity.de/assets/fonts/EuclidEnercity-Light.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Euclid Enercity";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/EuclidEnercity-Regular.woff") format("woff"),
+    url("/assets/fonts/EuclidEnercity-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Euclid Enercity";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/EuclidEnercity-Medium.woff") format("woff"),
+    url("/assets/fonts/EuclidEnercity-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Euclid Enercity";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/EuclidEnercity-Bold.woff") format("woff"),
+    url("/assets/fonts/EuclidEnercity-Bold.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: Euclid Enercity, sans-serif;
+}
+
+.card {
+  width: 20rem;
+  height: 20rem;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-header {
+  padding: 2rem 1rem;
+  background: linear-gradient(90deg, #990099 0%, #ff0000 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+.intro {
+  font-size: 1rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4d0df;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #c7125c;
+}
+
+input:focus + .slider {
+  border-color: #c7125c;
+  box-shadow: 0px 0px 0px 2px #fae8f0;
+}
+
+input:checked + .slider:before {
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
